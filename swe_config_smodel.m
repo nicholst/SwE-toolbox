@@ -42,7 +42,8 @@ groups.help    = {' '
              'Enter the groups in the ordering of the scans.'
              'The groups correspond to subjects sharing a common covariance matrix.'
              'The common covariance matrices are allowed to be different across groups.'
-            
+             ' '
+             'A single value (scalar) can be entered as a shortcut for the case of all subjects belonging to a single group.'
              ' '}';
 groups.strtype = 'e';
 groups.num     = [Inf 1];

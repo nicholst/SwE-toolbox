@@ -160,6 +160,9 @@ switch char(fieldnames(job.type))
         Vis.iVis = job.type.modified.visits;
         Vis.nVis = length(unique(Vis.iVis));
         Gr.iGr   = job.type.modified.groups;
+        if length(Gr.iGr) <= 1
+            Gr.iGr = ones(n,1);
+        end
         Gr.nGr   = length(unique(Gr.iGr));
         SS       = job.type.modified.ss;
         if length(Vis.iVis) ~= n
